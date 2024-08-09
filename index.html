@@ -182,25 +182,23 @@
     
     .tooltip .tooltiptext {
         visibility: hidden;
-        width: 85px;
-        background-color: #333333;
+        width: 120px;
+        background-color: #555;
         color: #fff;
         text-align: center;
         border-radius: 6px;
         padding: 5px 0;
-        font-family: "Open Sans", sans-serif;
-        font-size: 0.8em;
-        /* Position the tooltip */
         position: absolute;
-        z-index: 2;
-        bottom: 100%;
-        left: 100%;
-        margin-left: -64px;
-        margin-bottom: 3px;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
     }
-    
     .tooltip:hover .tooltiptext {
         visibility: visible;
+        opacity: 1;
     }
     
     .modal {
@@ -231,30 +229,7 @@
         padding: 20px;
         width: 80%;
     }
-    .tooltip {
-        position: relative;
-        display: inline-block;
-    }
-    .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 120px;
-        background-color: #555;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 1;
-        bottom: 125%;
-        left: 50%;
-        margin-left: -60px;
-        opacity: 0;
-        transition: opacity 0.3s;
-    }
-    .tooltip:hover .tooltiptext {
-        visibility: visible;
-        opacity: 1;
-    }
+    
     
     .close {
         color: #a6b8dd;
@@ -428,12 +403,12 @@
         </div>
     </div>
     <br>
-    <div id="Projects" style="text-align:center; padding-top:75px; width:100%; min-width:300px;">
+    <div id="Projects" style="width:100%; text-align:center; float:left; padding-top:75px; min-width:630px; ">
         <h1 style="font-size:2.3em; text-align: center;">Projects</h1>
         <br>
     
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 0 10px;">
-            <div id="490A" style="position: relative; width: 100%; max-width: 515px; height: 215px; background-color: rgb(166, 225, 250); padding: 20px; cursor: pointer; box-shadow: 0px 4px 8px rgba(0,0,0,0.1); transition: box-shadow 0.3s ease-in-out;"
+            <div id="490A" style="position: relative; width: calc(100% - 40px); max-width: 515px; height: 215px; background-color: rgb(166, 225, 250); padding: 20px; cursor: pointer; box-shadow: 0px 4px 8px rgba(0,0,0,0.1); transition: box-shadow 0.3s ease-in-out; margin-bottom: 20px;"
                 onmouseover="shadow('490A')" onmouseout="unshadow('490A')" onclick="modal('490AModal')">
                 <p style="font-size: 1.4em; color: #001C55; font-weight: 600;">Fitness Website</p>
                 <p style="margin-top: 10px; font-size: 1.0em; color: #001C55; font-weight: 400;">Developed a comprehensive Fitness Website featuring exercise management, BMI Calculator, Diet plan.</p>
@@ -444,7 +419,7 @@
                 </div>
             </div>
     
-            <div id="Nacam" style="position: relative; width: 100%; max-width: 515px; height: 215px; background-color: rgb(166, 225, 250); padding: 20px; cursor: pointer; box-shadow: 0px 4px 8px rgba(0,0,0,0.1); transition: box-shadow 0.3s ease-in-out;"
+            <div id="Nacam" style="position: relative; width: calc(100% - 40px); max-width: 515px; height: 215px; background-color: rgb(166, 225, 250); padding: 20px; cursor: pointer; box-shadow: 0px 4px 8px rgba(0,0,0,0.1); transition: box-shadow 0.3s ease-in-out; margin-bottom: 20px;"
                 onmouseover="shadow('Nacam')" onmouseout="unshadow('Nacam')" onclick="modal('NacamModal')">
                 <p style="font-size: 1.4em; color: #001C55; font-weight: 600;">Document Management System (DocuSync)</p>
                 <p style="margin-top: 10px; font-size: 1.0em; color: #001C55; font-weight: 400;">This comprehensive tech stack allowed us to create a seamless platform for storing, sharing and receiving documents efficiently.</p>
