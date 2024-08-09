@@ -460,6 +460,11 @@
             </div>
         </div>
     </div>
+    <div style="bottom:0; background-color: #ffffff; color: rgb(0, 28, 85, 1.0); width:100%; height:50px; text-align:center; box-shadow: 0 -2px 5px rgba(0,0,0,0.1);">
+        <p style="margin: 0; line-height:50px; font-size:14px; color: #666;">
+            &copy; <span id="year"></span> Vihar Modi. All rights reserved.
+        </p>
+    </div>
 </body>
 
 <script>
@@ -469,6 +474,9 @@
     navBarToggle.addEventListener("click", function() {
         mainNav.classList.toggle("active");
     });
+</script>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 <script>
